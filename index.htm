@@ -1,0 +1,367 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anyah BuildBot|Leveraging Technology For Growth</title>
+    <meta name="theme-color" content="#025dac">
+    <link rel="icon" href="images/business_logo.png" type="image/png">
+    <link rel="shortcut icon" href="images/business_logo.png" type="image/png">
+    <link rel="apple-touch-icon" href="images/business_logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50 text-slate-800 font-sans">
+
+    <!-- Top Bar with Contact Info & Social Media -->
+    <div id="top-bar" class="top-bar-gradient text-white py-2 px-6 text-sm fixed top-0 w-full z-50">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center">
+            <div class="flex items-center gap-4 md:gap-6 flex-wrap justify-center">
+                <div class="flex items-center gap-2">
+                    <i class="fas fa-map-marker-alt text-yellow-300"></i>
+                    <span>Kokopo, East New Britain Province, PNG</span>
+                </div>
+
+            </div>
+            <div class="flex items-center gap-4 mt-2 md:mt-0">
+                <a href="#" class="hover:text-yellow-300 transition"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="hover:text-yellow-300 transition"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation (Get a Quote buttons removed) -->
+    <nav id="main-nav" class="fixed w-full z-40 glass-effect border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
+            <!-- Logo - Image placeholder for local logo -->
+            <a href="index.htm" class="flex items-center logo-link">
+                <img src="images/business_logo.png" alt="Konnisys" class="logo-img">
+                <span class="logo-type">
+                    <span class="logo-text">Anya BuildBot</span>
+                    <span class="logo-tagline">Tech-driven growth.</span>
+                </span>
+            </a>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center gap-8 font-medium">
+                <a href="#portfolio" class="nav-link">Portfolio</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#about" class="nav-link">About Us</a>
+                <a href="#partners" class="nav-link">Partners</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+
+            <!-- Mobile Hamburger Button -->
+            <button id="mobile-menu-button" class="md:hidden text-2xl focus:outline-none">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu (Get a Quote button removed) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200 py-4 px-6">
+            <div class="flex flex-col gap-4">
+                <a href="#portfolio" class="nav-link-mobile">Portfolio</a>
+                <a href="#services" class="nav-link-mobile">Services</a>
+                <a href="#about" class="nav-link-mobile">About Us</a>
+                <a href="#partners" class="nav-link-mobile">Partners</a>
+                <a href="#contact" class="nav-link-mobile">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with IT-themed Animation -->
+    <section id="hero" class="hero-section px-6 text-white">
+        <!-- Animated circuit lines -->
+        <div class="circuit-line"></div>
+        <div class="circuit-line"></div>
+        <div class="circuit-line"></div>
+        <div class="circuit-line"></div>
+
+        <!-- Binary code particles -->
+        <div class="binary-particle">0101 1010</div>
+        <div class="binary-particle">1100 0011</div>
+        <div class="binary-particle">1010 1110</div>
+        <div class="binary-particle">0110 1001</div>
+        <div class="binary-particle">1001 1100</div>
+
+        <!-- Data dots -->
+        <div class="data-dot"></div>
+        <div class="data-dot"></div>
+        <div class="data-dot"></div>
+        <div class="data-dot"></div>
+        <div class="data-dot"></div>
+
+        <!-- Background Logo -->
+        <div class="hero-logo-bg">
+            <img src="images/business_logo.png" alt="Konnisys" class="hero-logo-image">
+        </div>
+
+        <div class="max-w-7xl mx-auto hero-content-wrapper">
+            <div class="flex flex-col items-center justify-center text-center">
+                <!-- Hero Content -->
+                <div class="animate-on-scroll max-w-4xl">
+                    <h1 class="hero-title mb-6">
+                        Leveraging Technology for <span>Growth.</span>
+                    </h1>
+                    <p class="hero-subtitle mb-8">
+                        From Software and website Development, Anya BuildBot provides the IT Support and software that drives modern growth.
+                    </p>
+                    <div class="flex flex-wrap gap-4 justify-center items-center">
+                        <a href="#contact" class="hero-cta-primary text-white px-8 py-4 rounded-lg font-bold transition inline-flex items-center justify-center">
+                            Launch Project
+                        </a>
+                        <a href="#services" class="hero-cta-secondary text-white px-8 py-4 rounded-lg font-bold transition inline-flex items-center justify-center">
+                            View Services
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Stats Section -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12 sm:mt-14 md:mt-16 lg:mt-20 w-full stagger-children">
+                    <div class="stat-card backdrop-blur-md bg-white/10 p-8 rounded-xl border border-white/10 hover:border-white/30 transition">
+                        <div class="stat-number text-4xl font-bold text-white mb-2">100%</div>
+                        <div class="stat-label text-white/80 font-semibold">Uptime Guaranteed</div>
+                    </div>
+                    <div class="stat-card backdrop-blur-md bg-white/10 p-8 rounded-xl border border-white/10 hover:border-white/30 transition">
+                        <div class="stat-number text-4xl font-bold text-white mb-2">24/7</div>
+                        <div class="stat-label text-white/80 font-semibold">Expert Support</div>
+                    </div>
+                    <div class="stat-card backdrop-blur-md bg-white/10 p-8 rounded-xl border border-white/10 hover:border-white/30 transition">
+                        <div class="stat-number text-4xl font-bold text-white mb-2">50+</div>
+                        <div class="stat-label text-white/80 font-semibold">Happy Clients</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section id="partners" class="py-8 bg-white border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6">
+            <p class="text-center text-slate-400 font-semibold uppercase tracking-widest text-sm mb-8 animate-on-scroll">Our Partners</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 items-center justify-center stagger-children">
+                <div class="flex flex-col items-center gap-4 opacity-50 hover:opacity-100 transition duration-500">
+                    <div class="w-full md:w-48 h-28 md:h-32 flex items-center justify-center bg-gray-50 rounded-lg p-4">
+                        <img src="images/partner01_smartech_png.jpg" alt="Konnisys" class="max-h-full max-w-full object-contain">
+                    </div>
+                    <span class="text-sm md:text-base font-semibold text-slate-600 text-center">Smartech PNG</span>
+                </div>
+                <div class="flex flex-col items-center gap-4 opacity-50 hover:opacity-100 transition duration-500">
+                    <div class="w-full md:w-48 h-28 md:h-32 flex items-center justify-center bg-gray-50 rounded-lg p-4">
+                        <img src="images/partner02_kutzo.PNG" alt="Tech Partner 1" class="max-h-full max-w-full object-contain">
+                    </div>
+                    <span class="text-sm md:text-base font-semibold text-slate-600 text-center">Kutzo</span>
+                </div>
+                <div class="flex flex-col items-center gap-4 opacity-50 hover:opacity-100 transition duration-500">
+                    <div class="w-full md:w-48 h-28 md:h-32 flex items-center justify-center bg-gray-50 rounded-lg p-4">
+                        <img src="images/tavolo-nature-tourism-logo.png" alt="Tech Partner 2" class="max-h-full max-w-full object-contain">
+                    </div>
+                    <span class="text-sm md:text-base font-semibold text-slate-600 text-center">Tavolo Nature and Tourism</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-12 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 animate-on-scroll">Our Core Expertise</h2>
+                <p class="text-slate-500 animate-on-scroll">Professional technology services tailored to your scale.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center max-w-6xl mx-auto stagger-children">
+                <div class="bg-white w-full max-w-md p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-2 transition duration-300">
+                    <div class="w-14 h-14 bg-sky-100 text-sky-700 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-gears text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Automation</h3>
+                    <p class="text-slate-600">Streamline workflows with system integrations, scripts, and process automation to save time.</p>
+                </div>
+
+                <div class="bg-white w-full max-w-md p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-2 transition duration-300">
+                    <div class="w-14 h-14 bg-violet-100 text-violet-700 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-database text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Data Management</h3>
+                    <p class="text-slate-600">Design reliable data pipelines, storage, and reporting with clean, well-governed datasets.</p>
+                </div>
+
+                <div class="bg-white w-full max-w-md p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-2 transition duration-300">
+                    <div class="w-14 h-14 bg-emerald-100 text-emerald-700 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-chart-line text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Predictive Analytics</h3>
+                    <p class="text-slate-600">Forecast trends, demand, and risk using data-driven models to support better decisions.</p>
+                </div>
+
+                <div class="bg-white w-full max-w-md p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-2 transition duration-300">
+                    <div class="w-14 h-14 bg-indigo-100 text-indigo-600 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-code text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Software and Website Development</h3>
+                    <p class="text-slate-600">Custom web applications and scalable Software-as-a-Service development.</p>
+                </div>
+                
+                <div class="bg-white w-full max-w-md p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-2 transition duration-300">
+                    <div class="w-14 h-14 bg-red-100 text-red-600 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-headset text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">IT Support</h3>
+                    <p class="text-slate-600">24/7 technical support, help desk services, and on-site assistance for all your IT needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio-section bg-white">
+        <div class="text-center mb-8">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4 text-blue-600 animate-on-scroll">Our Portfolio</h2>
+            <p class="text-slate-500 max-w-2xl mx-auto animate-on-scroll">Real-world solutions we've delivered for our clients</p>
+        </div>
+        <div class="portfolio-grid">
+            <div class="portfolio-item animate-on-scroll">
+                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&q=80" alt="IT Support" class="portfolio-image">
+                <div class="portfolio-content">
+                    <h3>Managed IT Support Services</h3>
+                    <p>24/7 technical helpdesk and on-site support for a leading financial services firm.</p>
+                </div>
+            </div>
+            <div class="portfolio-item animate-on-scroll">
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" alt="SaaS Platform" class="portfolio-image">
+                <div class="portfolio-content">
+                    <h3>Custom Software|website Devellopment</h3>
+                    <p>Scalable cloud-based or offline solutions tailored for your business or organization.</p>
+                </div>
+            </div>
+            <div class="portfolio-item animate-on-scroll">
+                <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80" alt="Hardware Solutions" class="portfolio-image">
+                <div class="portfolio-content">
+                    <h3>Enterprise Hardware Solutions</h3>
+                    <p>Complete IT equipment provisioning and deployment for a corporate expansion program.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-12 bg-slate-50 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-blue-600 animate-on-scroll">About Anya BuildBot</h2>
+                <p class="text-slate-500 max-w-2xl mx-auto animate-on-scroll">Your reliable partner in digital transformation since 2025</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="animate-left">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" alt="Our Team" class="rounded-2xl shadow-xl">
+                </div>
+                <div class="animate-right">
+                    <div class="flex gap-2 mb-4">
+                        <div class="w-2 h-2 bg-blue-600 rounded-full"></div>
+                        <div class="w-2 h-2 bg-red-600 rounded-full"></div>
+                        <div class="w-2 h-2 bg-yellow-500 rounded-full"></div>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">We're on a mission to revolutionize IT</h3>
+                    <p class="text-slate-600 mb-4">Founded in 2025, Anya BuildBot has grown from a small startup to a reliable IT solutions provider. We combine technical expertise with a passion for innovation to deliver results that matter.</p>
+                    <p class="text-slate-600 mb-6">Our team of certified professionals works tirelessly to ensure your business stays ahead in the digital age. IT support to custom software, we've got you covered.</p>
+                    <div class="flex gap-4 stagger-children">
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-blue-600">20+</div>
+                            <div class="text-sm text-slate-500">Projects Completed</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-red-600">98%</div>
+                            <div class="text-sm text-slate-500">Client Satisfaction</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-yellow-600">24/7</div>
+                            <div class="text-sm text-slate-500">Support Available</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section (New) -->
+    <section id="contact" class="contact-section">
+        <div class="contact-form animate-on-scroll">
+            <h2 class="text-center">Get In Touch</h2>
+            <p class="text-center">Have a question or ready to start your project? Send us a message.</p>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="John Doe" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Tell us about your project..." required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+                <p class="text-center mt-3 text-sm text-slate-500">This opens your email app. Or email us directly at <a class="text-blue-600 hover:text-blue-700 underline" href="mailto:imolketk@gmail.com">imolketk@gmail.com</a>.</p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Enhanced Footer (Get a Quote button removed) -->
+    <footer class="py-8 border-t border-blue-800 text-slate-300" style="background-color: #025dac;">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8 mb-6">
+                <!-- Company Info -->
+                <div class="animate-on-scroll">
+                    <a href="index.htm" class="inline-flex items-center footer-logo-link mb-4">
+                        <img src="images/business_logo.png" alt="Konnisys" class="footer-logo h-12 w-auto">
+                        <span class="text-white font-bold text-lg ml-2 hidden sm:inline">Anya BuildBot</span>
+                    </a>
+                    <p class="text-sm text-white/90">Expert IT solutions for Your businesses. We deliver innovation and reliability.</p>
+                </div>
+                
+                <!-- Navigation Menu in Footer -->
+                <div class="animate-on-scroll">
+                    <h4 class="text-white font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#portfolio" class="hover:text-blue-300 transition">Portfolio</a></li>
+                        <li><a href="#services" class="hover:text-blue-300 transition">Services</a></li>
+                        <li><a href="#about" class="hover:text-blue-300 transition">About Us</a></li>
+                        <li><a href="#partners" class="hover:text-blue-300 transition">Partners</a></li>
+                        <li><a href="#contact" class="hover:text-blue-300 transition">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div class="animate-on-scroll">
+                    <h4 class="text-white font-bold mb-4">Contact</h4>
+                    <ul class="space-y-2">
+                        <li><i class="fas fa-map-marker-alt text-white w-6 inline-block"></i> <span class="text-white">Anya BuildBot, Kokopo, PNG</span></li>
+                        <li><i class="fas fa-envelope text-white w-6 inline-block"></i> <a class="text-white hover:text-blue-200 transition" href="mailto:imolketk@gmail.com">imolketk@gmail.com</a></li>
+                        <li><i class="fas fa-phone text-white w-6 inline-block"></i> <span class="text-white">(+675) 7009-3434</span></li>
+                    </ul>
+                </div>
+                
+                <!-- Social Media (CTA removed) -->
+                <div class="animate-on-scroll">
+                    <h4 class="text-white font-bold mb-4">Follow Us</h4>
+                    <div class="flex gap-4">
+                        <a href="#" class="footer-social-icon"><i class="fab fa-facebook-f text-white"></i></a>
+                        <a href="#" class="footer-social-icon"><i class="fab fa-linkedin-in text-white"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Bottom Bar -->
+            <div class="border-t border-white pt-6 text-center text-sm animate-on-scroll" style="border-color: rgba(255, 255, 255, 0.3);">
+                <p class="text-white"><span style="opacity: 0.95;">&copy; 2026 Anya BuildBot. All rights reserved. | Designed with </span><i class="fas fa-heart text-white" style="margin: 0 0.25rem;"></i><span style="opacity: 0.95;"> Kokopo</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Dynamic Positioning and Mobile Menu -->
+    <script src="script.js"></script>
+</body>
+</html>
+

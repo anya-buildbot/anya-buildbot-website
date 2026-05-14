@@ -5,8 +5,19 @@
 
 /* Base layout safety (prevents width overflow + improves anchor alignment with fixed header) */
 *, *::before, *::after { box-sizing: border-box; }
-section[id] { scroll-margin-top: 9rem; }
-@media (max-width: 767px) { section[id] { scroll-margin-top: 11rem; } }
+/* scroll offsets handled below via --header-offset */
+
+/* Fixed header layout (top bar + main nav)
+   JS sets the actual offsets dynamically (script.js:updatePositions). */
+#top-bar{
+    display: flex;
+    align-items: center;
+}
+
+/* Anchor targets should land below the fixed header (value set via JS var) */
+:root{ --header-offset: 7rem; }
+html{ scroll-padding-top: var(--header-offset); }
+section[id]{ scroll-margin-top: calc(var(--header-offset) + 1rem); }
 
 /* Desktop hover */
 @media (hover: hover) and (pointer: fine) {
@@ -979,6 +990,13 @@ footer .border-t {
 
     #top-bar .flex.items-center.gap-4.md\\:mt-0 {
         margin-top: 0.5rem;
+    }
+
+    #top-bar{
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+        font-size: 0.8rem;
+        line-height: 1.15;
     }
 
     /* Navigation */

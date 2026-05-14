@@ -14,6 +14,9 @@
         const navHeight = mainNav.offsetHeight;
         const totalFixedHeight = topBarHeight + navHeight;
 
+        document.documentElement.style.setProperty('--header-offset', totalFixedHeight + 'px');
+        document.body.style.paddingTop = totalFixedHeight + 'px';
+
         hero.style.paddingTop = (totalFixedHeight + 16) + 'px';
         hero.style.paddingBottom = '5rem';
     }

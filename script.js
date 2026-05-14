@@ -168,17 +168,20 @@
 
             const nameEl = document.getElementById('name');
             const emailEl = document.getElementById('email');
+            const serviceEl = document.getElementById('service');
             const messageEl = document.getElementById('message');
 
             const name = nameEl ? nameEl.value.trim() : '';
             const email = emailEl ? emailEl.value.trim() : '';
+            const service = serviceEl ? serviceEl.value.trim() : '';
             const message = messageEl ? messageEl.value.trim() : '';
 
             const to = 'imolketk@gmail.com';
-            const subject = 'Konnisys Contact Form';
+            const subject = 'Anya BuildBot Contact Form';
             const body =
                 `Name: ${name}\n` +
                 `Email: ${email}\n\n` +
+                `Service: ${service}\n\n` +
                 `Message:\n${message}\n`;
 
             const mailto =
